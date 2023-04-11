@@ -222,8 +222,9 @@ export function Settings(props: { closeSettings: () => void }) {
               </div>
             </Popover>
           </SettingItem>
-
-          <SettingItem
+          
+          {/* 版本更新 */}
+          {/* <SettingItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
               checkingUpdate
@@ -246,8 +247,9 @@ export function Settings(props: { closeSettings: () => void }) {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </SettingItem>
-
+          </SettingItem> */}
+          
+          {/* 发送键 */}
           <SettingItem title={Locale.Settings.SendKey}>
             <select
               value={config.submitKey}
@@ -265,7 +267,8 @@ export function Settings(props: { closeSettings: () => void }) {
               ))}
             </select>
           </SettingItem>
-
+          
+          {/* 主题 */}
           <ListItem>
             <div className={styles["settings-title"]}>
               {Locale.Settings.Theme}
@@ -285,7 +288,8 @@ export function Settings(props: { closeSettings: () => void }) {
               ))}
             </select>
           </ListItem>
-
+          
+          {/* 语言 */}
           <SettingItem title={Locale.Settings.Lang.Name}>
             <select
               value={getLang()}
@@ -300,7 +304,8 @@ export function Settings(props: { closeSettings: () => void }) {
               ))}
             </select>
           </SettingItem>
-
+          
+          {/* 字体大小 */}
           <SettingItem
             title={Locale.Settings.FontSize.Title}
             subTitle={Locale.Settings.FontSize.SubTitle}
@@ -319,7 +324,8 @@ export function Settings(props: { closeSettings: () => void }) {
               }
             ></InputRange>
           </SettingItem>
-
+          
+          {/* 无边框模式 */}
           <SettingItem title={Locale.Settings.TightBorder}>
             <input
               type="checkbox"
@@ -331,7 +337,8 @@ export function Settings(props: { closeSettings: () => void }) {
               }
             ></input>
           </SettingItem>
-
+          
+          {/* 发送预览气泡 */}
           <SettingItem title={Locale.Settings.SendPreviewBubble}>
             <input
               type="checkbox"
@@ -379,7 +386,7 @@ export function Settings(props: { closeSettings: () => void }) {
             />
           </SettingItem>
 
-          <SettingItem
+          {/* <SettingItem
             title={Locale.Settings.Usage.Title}
             subTitle={
               showUsage
@@ -439,10 +446,10 @@ export function Settings(props: { closeSettings: () => void }) {
                 )
               }
             ></input>
-          </SettingItem>
+          </SettingItem> */}
         </List>
 
-        <List>
+        {/* <List>
           <SettingItem
             title={Locale.Settings.Prompt.Disable.Title}
             subTitle={Locale.Settings.Prompt.Disable.SubTitle}
@@ -472,9 +479,9 @@ export function Settings(props: { closeSettings: () => void }) {
               onClick={() => showToast(Locale.WIP)}
             />
           </SettingItem>
-        </List>
+        </List> */}
 
-        <List>
+        {/* <List>
           <SettingItem title={Locale.Settings.Model}>
             <select
               value={config.modelConfig.model}
@@ -554,7 +561,7 @@ export function Settings(props: { closeSettings: () => void }) {
               }}
             ></InputRange>
           </SettingItem>
-        </List>
+        </List> */}
       </div>
     </ErrorBoundary>
   );
