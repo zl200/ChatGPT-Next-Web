@@ -469,3 +469,20 @@
   height: 100%;
   width: 100%;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: #333;
+  font-size: 12px;
+  padding-bottom: 15px;
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: rgb(190, 90, 90);
+  }
+}
