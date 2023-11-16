@@ -247,9 +247,9 @@ function _Home() {
           />
         )}
       </div>
-      <div className={styles.footer}>
+{/*       <div className={styles.footer}>
         <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2022005500号-1</a>
-      </div>
+      </div> */}
     </div>
   );
 }
